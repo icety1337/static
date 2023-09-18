@@ -1,605 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="icon" href="assets/icon.ico">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/marquee.js"></script>
-<script src="js/countdown.js"></script>
-<script src="https://kit.fontawesome.com/cac34c9d75.js"></script>
-<script>
-(function($) {
-    "use strict";
-
-    jQuery(document).ready(function($) {});
-
-    jQuery(window).on('load', function() {
-        $(".preloader").fadeOut(1500);
-
-    });
-}(jQuery));
-</script>
-
-<audio autoplay loop id="music">
-  <source src="assets/music.mp3" type="audio/mp3">
-</audio>
-</body>
-
-<script>
-  var audio = document.getElementById("music");
-  audio.volume = 0.3;
-</script>
-
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#D674FE">
+<meta content="@icetyeiei" property="og:site_name">
+<meta property="og:description" content="&lt;3">
+<meta content="http://res.cloudinary.com/dsur9njeq/image/upload/v1659194983/E0LfoXFoYzfRRo0e.gif" property="og:image">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Kanit:300,400,600,700|Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6a41bf085c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<link rel="stylesheet" href="./style_profile.css">
+<link rel="icon" type="image/png" href="fav.jpg" />
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<title><3 - icetyeiei</title>
 </head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-html {
-    position: fixed;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    touch-action: manipulation;
-}
-body {
-    font-family: 'Mulish', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: #111112;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
-}
-.particles-js-canvas-el {
-    position: absolute;
-    display: block;
-    vertical-align: bottom;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-    transition: opacity .8s ease, transform 0.75s ease;
-    z-index: -1000;
-}
-.particles-js-canvas-el:hover {
-    transform: scale(1.1);
-}
-#particles-js {
-    background: linear-gradient(-45deg, #ad5389, #3c1053);
-	  background-size: 400% 400%;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -10;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-p {
-  display: block;
-  margin: 1em 0;
-}
-*,*:before,*:after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-}
-.particles-js {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: 0px;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.glitch {
-  font-size: 30px;
-  text-align: center;
-  position: relative;
-  animation: shake .4s infinite;
-  animation-direction: alternate;
-}
-
-.glitch_fixed {
-  font-size: 30px;
-  text-align: center;
-  position: relative;
-  color: #EEEEEE;
-  animation: color .4s infinite;
-  animation-direction: alternate;
-}
-
-.glitch_opacity {
-  font-size: 30px;
-  text-align: center;
-  position: relative;
-  color: #EEEEEE;
-  position: absolute;
-  top: 0;
-  left: -2px;
-  animation: show .2s infinite;
-  animation-direction: alternate;
-}
-
-.glitch_opacity span {
-  color: #F802F8;
-}
-
-@keyframes show {
-  50% {
-    opacity: 0;
-    text-shadow: 2px 2px #AAE90E;
-  }
-}
-
-@keyframes color {
-  50% {
-    color: #b1b1b1;
-  }
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(2px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(0px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(2px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(2px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-.span {
-  animation: glitch .4s linear infinite;
-  animation-direction: alternate;
-  position: absolute;
-  transform: translateY(0px);
-}
-
-.glithc span {
-  position: absolute;
-}
-
-.glitch span:first-child {
-  @extend .span;
-  left: 0;
-}
-
-.glitch span:nth-child(2) {
-  @extend .span;
-  left: 25px;
-}
-
-.glitch span:nth-child(3) {
-  @extend .span;
-  left: 50px;
-}
-
-.glitch span:nth-child(4) {
-  @extend .span;
-  left: 75px;
-}
-
-.glitch span:nth-child(5) {
-  @extend .span;
-  left: 100px;
-}
-
-.glitch span:nth-child(6) {
-  @extend .span;
-  left: 125px;
-}
-
-@keyframes glitch {
-  0% {
-    transform: translateY(-10%);
-    transform: translateX(-5%);
-  }
-  50% {
-    transform: translateY(-10%);
-    transform: translateX(-10%);
-    color: #01FA01;
-  }
-  100% {
-    transform: translateY(10%);
-    transform: translateX(5%);
-    color: #FA0103;
-    clip: rect(40px, 0px, 40px, 0px);
-  }
-}
-
-a {
-    font-size: 13px;
-    color: #ff5266;
-}
-a:hover {
-    color: #cc4151;
-    text-decoration: none;
-}
-static {
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    color: #ffffff;
-}
-countdown {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #dc77f2;
-}
-#author {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 10px;
-}
-#date {
-    position: fixed;
-    bottom: 0;
-    right:0;
-    margin-right: 10px;
-}
-
-
-h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 5em;
-  letter-spacing: 8px;
-  font-family: 'Press Start 2P';
-  font-weight: 400;
-  /*Create overlap*/
-  
-  margin: 0;
-  line-height: 0;
-  /*Animation*/
-  
-  animation: glitch1 2.5s infinite;
-}
-
-h1:nth-child(2) {
-  color: #67f3da;
-  animation: glitch2 2.5s infinite;
-}
-
-h1:nth-child(3) {
-  color: #f16f6f;
-  animation: glitch3 2.5s infinite;
-}
-/*Keyframes*/
-
-@keyframes glitch1 {
-  0% {
-    transform: none;
-    opacity: 1;
-  }
-  7% {
-    transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.75;
-  }
-  10% {
-    transform: none;
-    opacity: 1;
-  }
-  27% {
-    transform: none;
-    opacity: 1;
-  }
-  30% {
-    transform: skew(0.8deg, -0.1deg);
-    opacity: 0.75;
-  }
-  35% {
-    transform: none;
-    opacity: 1;
-  }
-  52% {
-    transform: none;
-    opacity: 1;
-  }
-  55% {
-    transform: skew(-1deg, 0.2deg);
-    opacity: 0.75;
-  }
-  50% {
-    transform: none;
-    opacity: 1;
-  }
-  72% {
-    transform: none;
-    opacity: 1;
-  }
-  75% {
-    transform: skew(0.4deg, 1deg);
-    opacity: 0.75;
-  }
-  80% {
-    transform: none;
-    opacity: 1;
-  }
-  100% {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-@keyframes glitch2 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-  7% {
-    transform: translate(-2px, -3px);
-    opacity: 0.5;
-  }
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-  30% {
-    transform: translate(-5px, -2px);
-    opacity: 0.5;
-  }
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-  55% {
-    transform: translate(-5px, -1px);
-    opacity: 0.5;
-  }
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-  75% {
-    transform: translate(-2px, -6px);
-    opacity: 0.5;
-  }
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
-
-@keyframes glitch3 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-  7% {
-    transform: translate(2px, 3px);
-    opacity: 0.5;
-  }
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-  30% {
-    transform: translate(5px, 2px);
-    opacity: 0.5;
-  }
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-  55% {
-    transform: translate(5px, 1px);
-    opacity: 0.5;
-  }
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-  75% {
-    transform: translate(2px, 6px);
-    opacity: 0.5;
-  }
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
-
-
-/* Loader CSS */
-.preloader {
-	background-color: #202631;
-	bottom: 0;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-}
-.lds-ellipsis {
-	margin: 0 auto;
-	position: relative;
-	top: 50%;
-	-moz-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	width: 64px;
-	text-align: center;
-	z-index: 9999;
-}
-.lds-ellipsis span {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	background-color: #f54287;
-	-webkit-animation: ball-pulse-sync 1s 0s infinite ease-in-out;
-	animation: ball-pulse-sync 1s 0s infinite ease-in-out;
-}
-.lds-ellipsis span:nth-child(1) {
-	-webkit-animation:ball-pulse-sync 1s -.14s infinite ease-in-out;
-	animation:ball-pulse-sync 1s -.14s infinite ease-in-out
-}
-.lds-ellipsis span:nth-child(2) {
-	-webkit-animation:ball-pulse-sync 1s -70ms infinite ease-in-out;
-	animation:ball-pulse-sync 1s -70ms infinite ease-in-out
-}
-@-webkit-keyframes ball-pulse-sync {
-	33% {
-		-webkit-transform:translateY(10px);
-		transform:translateY(10px)
- }
-	66% {
-		-webkit-transform:translateY(-10px);
-		transform:translateY(-10px)
-	}
-	100% {
-		-webkit-transform:translateY(0);
-		transform:translateY(0)
-	}
-}
-@keyframes ball-pulse-sync {
-	33% {
-		-webkit-transform:translateY(10px);
-		transform:translateY(10px)
-	}
-	66% {
-		-webkit-transform:translateY(-10px);
-		transform:translateY(-10px)
-	}
-	100% {
-		-webkit-transform:translateY(0);
-		transform:translateY(0)
-	}
-}
-
-#discord-ui {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right:0;
-    top: 10px;
-    margin-right: 10px;
-}
-
-@media (min-width: 1060px) {
-  #discord-ui {
-    display: block;
-  }
-}
-
-</style>
-<body oncontextmenu="return false" onkeydown="return false;">
-<div class="preloader">
-  <div class="lds-ellipsis">
-	  <span></span>
-    <span></span>
-    <span></span>
-  </div>
+<body scroll="no">
+<audio id="Ice_music_player" loop yid="ry2rCGWl1wY"></audio>
+<div class="h-100 row align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(http://res.cloudinary.com/dsur9njeq/image/upload/v1659194962/X0RzLYzYZOl0r0YL.gif);background-size: cover;background-position: center;
+        background-repeat: no-repeat;">
+<div class="col d-flex justify-content-center">
+<div class="text-center __bul_card shadow">
+<div class="row mb-4 pt-3 pb-2 shadow" style="background-color: rgb(10, 10, 14); margin-top: -14px; border-radius: 18px; border: solid 1px #ffffff15;">
+<div class="col-9">
+<h6 class="Ice_music_head text-left mb-1"><i class="fa-solid fa-music mr-1" style="transform: scale(0.9)"></i> LANDOKMAI - Tsuki (พระจันทร์)  </h6>
+<p class="Ice_music_playing text-left mt-1 mb-0">หยุดชั่วคราว</p>
 </div>
-<div id="particles-js">
-<script src="js/test.js"></script>
-<script src="js/particle.js"></script>
-<p class="glitch_fixed">
-<font size="6">
-  <strong>
-  <span>I</span>
-  <span>C</span>
-  <span>E</span>
-  <span>x</span>
-  <span>P</span>
-  <span>U</span>
-  <span>N</span>
-  </strong>
-</font>
-<br />
-<static>IcetyEIEI</static>
-<br />
-<static>??? 9-12-2020 </static><countdown id="countdown">Fetching data ... <i class="fas fa-sync fa-spin" style="font-size:12px"></i></countdown>
-<br>
-<br />
+<div class="col-3 d-flex align-items-center">
+<i class="Ice_play fa-solid fa-play" style="display: unset;"></i>
+<i class="Ice_pause fa-solid fa-pause" style="display: none;"></i>
+</div>
+<div class="col-12 pt-0 mt-2">
+<div class="row mb-0 pb-0">
+<div class="col-2">
+<i class="fa-solid fa-volume-high ml-1" style="margin-top: 6px !important; color: rgb(233, 233, 233);"></i>
+<i class="fa-solid fa-volume-mute ml-1" style="margin-top: 6px !important; color: rgb(233, 233, 233); display: none;"></i>
+</div>
+<div class="col-10" style="background-color: rgba(10, 10, 10, 0) !important; border: 0 0 10px 10px;">
+<input type="range" class="form-range w-100 mb-2" id="customRange1">
+</div>
+</div>
+</div>
+</div>
+<img class="rounded-circle shadow-sm Ice_pfp user-select-none" src="https://res.cloudinary.com/dsur9njeq/image/upload/v1659194983/E0LfoXFoYzfRRo0e.gif" alt="">
+<p class="__bul_card_name align-middle mt-3 mb-1">icez
 </p>
-<div id="date">
-<font size="2" color="#FFF">November 21, 2005</font>
+<p class="__bul_card_at">ahhh.rip - @icetyeiei</p>
+<p class="__bul_card_at">7af.net - @icetyeiei</p>
+<hr>
+<p class="__bul_card_bio mb-2 shadow-sm">&lt;3</p>
+<button type="button" onclick="discordCopy()" class="btn btn-secondary __bul_discord_btn mt-2">
+<i class="fa-brands fa-discord mr-2"></i> ! Icez#1337
+</button>
+<div class="row p-2 pb-0 mt-2 d-flex justify-content-center align-self-center __bul_socials_row">
+<a href="https://instagram.com/_pun.xz" target="_blank">
+<button type="button" class="btn btn-secondary __bul_instagram_btn">
+<i class="fa-brands fa-instagram d-flex justify-content-center"></i>
+</button>
+</a>
+<a href="https://tiktok.com/@icesocutez" target="_blank">
+<button type="button" class="btn btn-secondary __bul_tiktok_btn">
+<i class="fa-brands fa-tiktok d-flex justify-content-center"></i>
+</button>
+</a>
+<a href="https://twitter.com/uwuz1337" target="_blank">
+<button type="button" class="btn btn-secondary __bul_twitter_btn">
+<i class="fa-brands fa-twitter d-flex justify-content-center"></i>
+</button>
+</a>
 </div>
-<div id="author">
-<font color="#FFF" size="2">Made with</font> <font color="#f54287"><i class="fas fa-heart" style="font-size:12px"></i></font> <font size="2" color="#FFF">by <b>Inshallah</b></font>
 </div>
 </div>
-
-<script>var countDownDate = new Date("Sep 12, 2021 00:00:00").getTime();</script>
-
+</div>
+</div>
+</div>
+<div id="Ice_notification">ก็อป user#tag เรียบร้อย</div>
+</body>
 <script>
-  particlesJS.load('particles-js', 'particle-cfg.json', function() {});
+  var _0x4be4d3=_0x4ac3;function _0x4ac3(_0x5700a0,_0x2102f4){var _0x53863a=_0x5386();return _0x4ac3=function(_0x4ac34b,_0x55856c){_0x4ac34b=_0x4ac34b-0x187;var _0x1a6b7f=_0x53863a[_0x4ac34b];return _0x1a6b7f;},_0x4ac3(_0x5700a0,_0x2102f4);}(function(_0x5ab05b,_0x47085d){var _0x4d2fa8=_0x4ac3,_0x28cb85=_0x5ab05b();while(!![]){try{var _0xb74419=-parseInt(_0x4d2fa8(0x190))/0x1*(-parseInt(_0x4d2fa8(0x19f))/0x2)+parseInt(_0x4d2fa8(0x1b8))/0x3*(parseInt(_0x4d2fa8(0x1ba))/0x4)+-parseInt(_0x4d2fa8(0x1ab))/0x5+parseInt(_0x4d2fa8(0x1ad))/0x6+parseInt(_0x4d2fa8(0x1c1))/0x7+parseInt(_0x4d2fa8(0x1aa))/0x8+-parseInt(_0x4d2fa8(0x188))/0x9;if(_0xb74419===_0x47085d)break;else _0x28cb85['push'](_0x28cb85['shift']());}catch(_0x454b19){_0x28cb85['push'](_0x28cb85['shift']());}}}(_0x5386,0x20ff9));var yid=$('#Ice_music_player')[_0x4be4d3(0x1b1)](_0x4be4d3(0x18d)),vid=yid,audio_streams={},audio_tag=document['getElementById']('Ice_music_player');function _0x5386(){var _0x239905=['value','getElementById','.Ice_music_playing','Ice_music_player','pause','split','webm_h','inline-block','ytplayer.config={args:{raw_player_response:ytInitialPlayerResponse}};','css','39826BUdSZv','concat','exec','url','display','random','itag','src','adaptiveFormats','unset','streamingData','1190592NuEsiB','1178010tIYxXn','.fa-volume-mute','1581498UKdNQy','formats','click','then','attr','256kbps','length','-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=','48kbps','input','replace','60rUgWMg','กำลังเล่นอยู่','5044FMAtWt','parse','none','128kbps','color','.Ice_pause','.Ice_play','948927zDMJeb','https://images','2897127SxWNyy','webm_l','volume','webm_m','ytInitialPlayerResponse\x20=\x20null','yid','trigger','window.getPageData','6KqCqIT','change','text','rgb(255,\x20192,\x2055)','ytInitialPlayerResponse=window.ytInitialPlayerResponse'];_0x5386=function(){return _0x239905;};return _0x5386();}fetch(_0x4be4d3(0x187)+~~(Math[_0x4be4d3(0x1a4)]()*0x21)+_0x4be4d3(0x1b4)+encodeURIComponent('https://www.youtube.com/watch?hl=en&v='+vid))[_0x4be4d3(0x1b0)](_0x55a4b8=>{var _0x2b736f=_0x4be4d3;_0x55a4b8['ok']&&_0x55a4b8['text']()[_0x2b736f(0x1b0)](_0x1c1143=>{var _0x42f4af=_0x2b736f,_0x2d9856=/(?:ytplayer\.config\s*=\s*|ytInitialPlayerResponse\s?=\s?)(.+?)(?:;var|;\(function|\)?;\s*if|;\s*if|;\s*ytplayer\.|;\s*<\/script)/gmsu;_0x1c1143=_0x1c1143[_0x42f4af(0x19a)](_0x42f4af(0x18f))[0x0],_0x1c1143=_0x1c1143['replace'](_0x42f4af(0x18c),''),_0x1c1143=_0x1c1143[_0x42f4af(0x1b7)](_0x42f4af(0x194),''),_0x1c1143=_0x1c1143[_0x42f4af(0x1b7)](_0x42f4af(0x19d),'');var _0x1d660c=_0x2d9856[_0x42f4af(0x1a1)](_0x1c1143),_0x1c1143=_0x1d660c&&_0x1d660c[_0x42f4af(0x1b3)]>0x1?JSON[_0x42f4af(0x1bb)](_0x1d660c[0x1]):![],_0x9b04ec=[],_0x11048d={};if(_0x1c1143[_0x42f4af(0x1a9)])_0x1c1143['streamingData'][_0x42f4af(0x1a7)]&&(_0x9b04ec=_0x9b04ec['concat'](_0x1c1143[_0x42f4af(0x1a9)][_0x42f4af(0x1a7)])),_0x1c1143['streamingData'][_0x42f4af(0x1ae)]&&(_0x9b04ec=_0x9b04ec[_0x42f4af(0x1a0)](_0x1c1143[_0x42f4af(0x1a9)][_0x42f4af(0x1ae)]));else return![];_0x9b04ec['forEach'](function(_0x3e4025,_0x8ba4a2){var _0x20c2ef=_0x42f4af,_0x56bf58=_0x3e4025[_0x20c2ef(0x1a5)]*0x1,_0x26c44f=![];switch(_0x56bf58){case 0x8b:_0x26c44f=_0x20c2ef(0x1b5);break;case 0x8c:_0x26c44f='128kbps';break;case 0x8d:_0x26c44f='256kbps';break;case 0xf9:_0x26c44f=_0x20c2ef(0x189);break;case 0xfa:_0x26c44f=_0x20c2ef(0x18b);break;case 0xfb:_0x26c44f=_0x20c2ef(0x19b);break;}if(_0x26c44f)audio_streams[_0x26c44f]=_0x3e4025[_0x20c2ef(0x1a2)];}),audio_tag[_0x42f4af(0x1a6)]=audio_streams[_0x42f4af(0x1b2)]||audio_streams[_0x42f4af(0x1bd)]||audio_streams[_0x42f4af(0x1b5)];});});var x=document[_0x4be4d3(0x196)](_0x4be4d3(0x198));x[_0x4be4d3(0x18a)]=0.5,$(_0x4be4d3(0x1c0))[_0x4be4d3(0x1af)](function(){var _0x1ba7ac=_0x4be4d3;x['play'](),$('.Ice_music_playing')['css']('color','#1ed75ff1'),$(_0x1ba7ac(0x197))[_0x1ba7ac(0x192)](_0x1ba7ac(0x1b9)),$(_0x1ba7ac(0x1c0))[_0x1ba7ac(0x19e)]('display',_0x1ba7ac(0x1bc)),$('.Ice_pause')[_0x1ba7ac(0x19e)](_0x1ba7ac(0x1a3),_0x1ba7ac(0x1a8));}),$('.Ice_pause')[_0x4be4d3(0x1af)](function(){var _0x4c2132=_0x4be4d3;x[_0x4c2132(0x199)](),$(_0x4c2132(0x197))['css'](_0x4c2132(0x1be),_0x4c2132(0x193)),$(_0x4c2132(0x197))[_0x4c2132(0x192)]('หยุดชั่วคราว'),$(_0x4c2132(0x1c0))[_0x4c2132(0x19e)](_0x4c2132(0x1a3),'unset'),$(_0x4c2132(0x1bf))[_0x4c2132(0x19e)](_0x4c2132(0x1a3),_0x4c2132(0x1bc));}),$('input[type=range]')['on'](_0x4be4d3(0x1b6),function(){var _0xe8e239=_0x4be4d3;$(this)[_0xe8e239(0x18e)](_0xe8e239(0x191)),x[_0xe8e239(0x18a)]=this[_0xe8e239(0x195)]/0x64,this[_0xe8e239(0x195)]==0x0?($('.fa-volume-high')[_0xe8e239(0x19e)](_0xe8e239(0x1a3),_0xe8e239(0x1bc)),$(_0xe8e239(0x1ac))[_0xe8e239(0x19e)](_0xe8e239(0x1a3),_0xe8e239(0x19c))):($('.fa-volume-high')['css'](_0xe8e239(0x1a3),_0xe8e239(0x19c)),$(_0xe8e239(0x1ac))[_0xe8e239(0x19e)](_0xe8e239(0x1a3),'none'));});
+  function discordCopy() {
+    var x = document.getElementById("Ice_notification");
+    x.className = "show";
+    const textToCopy = '! Icez#1337'
+    navigator.clipboard.writeText(textToCopy)
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
 </script>
-
 </html>
